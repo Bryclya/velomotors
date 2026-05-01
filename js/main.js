@@ -392,6 +392,8 @@ function toggleTab3(e) {
   }
 }
 
+
+
 //accordion FAQ
 
 const accordionLists = document.querySelectorAll(".accordion-list");
@@ -491,6 +493,10 @@ document.addEventListener("keydown", (e) => {
     body.classList.remove("body--opened-modal2");
   }
 });
+
+
+
+//testimonial star
 
 class CommentRating {
   constructor() {

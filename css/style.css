@@ -647,8 +647,6 @@ hr {
     padding: 30px;
 }
 
-.servise-item-list {}
-
 .servise-item-list {
     font-family: var(--font-accent-text);
     font-weight: 700;
@@ -816,7 +814,9 @@ hr {
 
 .delivery-button-next {}
 
-.delivery-map {}
+.delivery-map-car {
+    border-radius: 12px;
+}
 
 .delivery-map-ps {
     font-family: var(--font-accent-text);
@@ -1511,7 +1511,7 @@ hr {
         height: 27vw;
         width: 29vw;
     }
-    .about-swiper-wrapper div img {
+    .products-swiper-wrapper div img {
         background-size: cover;
         height: 17.5vw;
     }
@@ -1522,6 +1522,8 @@ hr {
         font-size: 1.8vw;
         line-height: 1;
     }
+
+
     .servise-desc, .servise-desc-right {
         width: 50%;
     }
@@ -1530,35 +1532,48 @@ hr {
     }
 
 
-    .delivery-wrapper {
-        flex-direction: column;
+    .delivery-map-ps {
+        font-size: 2vw;
+    } 
+    .delivery-map-price {
+        width: 49vw;
     }
-    .delivery-map-image {
-        display: none;
+    .delivery-map-decore {
+        width: 12vw;
+        height: 12vw;
+        top: -6vw;
+        left: -6vw;
+    }
+    .delivery-map-car {
+        background-size: cover;
+        width: 49vw;
+    }
+    .delivery-wrapper {
+        align-items: center;
+    }
+    .swiper-delivery {
+        width: 40vw;
+        height: 35vw;
+    }
+    .delivery-city {
+        height: 50vw;
     }
     .delivery-slide {
         font-size: 3.5vw;
-        width: 60vw;
-        height: 10vw;
+        width: 38vw;
+        height: 4.5vw;
         justify-self: center;
     }
     .delivery-slide--active {
-        width: 62vw;
+        width: 40vw;
     }
     .delivery-city-swiper {
-        width: 62vw;
-        height: 70vw;
+        width: 40vw;
+        height: 45vw;
     }
-    .delivery-button-prev, .delivery-button-next {
-        width: 30px;
-        height: 30px;
-    }
-    .delivery-button-prev img, .delivery-button-next img{
-        width: 30px;
-        height: 30px;
-    }
-    .delivery-map-ps {
+    .delivery-map-price {
         font-size: 4vw;
+        height: 5vw;
     }
     
 }
@@ -1604,18 +1619,17 @@ hr {
     .products-wrapper {
         gap: 5px;
     }
-
-
     .products-swiper-text {
         padding: 10px 20px;
     }
+
 
     .servise-wrapper {
         gap: 5px;
     }
     .servise-item-list {
-        font-size: 2vw;
-        line-height: 1.2;
+        font-size: 3vw;
+        line-height: 1;
     }
 
 
@@ -1703,9 +1717,6 @@ hr {
     .servise-decor-right, .servise-decor-left {
         width: 60vw;
         height: 60vw;
-    }
-    .delivery-map-price {
-        font-size: 7vw;
     }
 
 
@@ -1818,7 +1829,7 @@ hr {
         height: 60px;
     }
     .servise-item--active {
-        width: 280px;
+        width: 300px;
     }
     .servise-item-icon img {
         width: 40px;
@@ -1848,8 +1859,22 @@ hr {
     .servise-desc-price {
         font-size: 3vw;
     }
+
+
+
     .delivery-title {
         font-size: 4vw;
+    }
+    .delivery-button-prev, .delivery-button-next {
+        width: 4vw;
+        height: 4vw;
+    }
+    .delivery-button-prev img, .delivery-button-next img{
+        width: 4vw;
+        height: 4vw;
+    }
+    .delivery-city {
+        height: 45vw;
     }
 
 
@@ -1936,6 +1961,11 @@ hr {
     }
 
 
+    .delivery-map-price {
+        border-radius: 4px;
+    }
+
+
     .testimonials-item-client {
         padding: 5px;
         gap: 5px;
@@ -1967,14 +1997,42 @@ hr {
     }
     .about-gallery-icon {
         padding: 6px 10px;
-        width: 100px;
+        width: 20vw;
+        height: 5vw;
+        font-size: 3vw;
     }
+    .about-icon-wrapper {
+        gap: 5px;
+    }
+    .global-button-holder {
+        width: 10vw;
+        height: 5vw;
+    }
+    .global-button-prev {
+        width: 4vw;
+        height: 4vw;
+    }
+    .global-button-next {
+        width: 4vw;
+        height: 4vw;
+    }
+    
 
     .achievements-wrapper {
         gap: 5px;
     }
     .about-gallery-nav {
         gap: 5px;
+    }
+
+
+    .products {
+        margin: 15px 0;
+    }
+    
+
+    .servise-wrapper {
+        gap: 2px;
     }
     .servise-item-top {
         height: 45px;
@@ -1988,7 +2046,7 @@ hr {
         font-size: 10px;
     }
     .servise-item--active {
-        width: 210px;
+        width: 280px;
     }
     .servise-item--active .servise-item-top {
         border-radius: 4px 4px 0 0;
@@ -2014,6 +2072,9 @@ hr {
 
     .delivery-slide {
         border-radius: 4px;
+    }
+    .delivery-title {
+        margin-bottom: 15px;
     }
 
     .contact {
@@ -2076,14 +2137,13 @@ hr {
         padding: 10px;
     }
     .servise-item--active {
-        width: 190px;
+        width: 270px;
     }
 
 
-    .delivery-map-price {
-        height: 40px;
+    .delivery-button-prev, .delivery-button-next {
+        border-radius: 4px;
     }
-
 
 
     .testimonials {
@@ -2112,9 +2172,7 @@ hr {
     .servise-item-top {
         height: 32px;
     }
-    .servise-item--active {
-        width: 220px;
-    }
+
     .servise-item-icon img {
         width: 20px;
         height: 20px;
