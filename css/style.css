@@ -108,6 +108,7 @@ hr {
 .header_top {
     position: fixed;
     z-index: 2;
+    top: 0;
     left: 0;
     right: 0;
     background: #292929;
@@ -209,7 +210,7 @@ hr {
 
 
 .hero {
-    margin: 40px 0;
+    margin: 35px 0 40px;
 }
 
 .hero__swiper {
@@ -223,7 +224,7 @@ hr {
 }
 
 .hero-slide {
-    background: url("../img/hero-slider.jpg") 50% 50% no-repeat;
+    background: url("../img/hero-slider.webp") 50% 50% no-repeat;
     background-size: cover;
 }
 
@@ -1495,7 +1496,7 @@ hr {
 
 @media (max-width: 1280px) {
     .hero {
-        margin: 15px 0;
+        margin: 15px 0 15px;
     }
     .hero-text {
         width: 47vw;
@@ -1718,11 +1719,11 @@ hr {
     }
 
     .hero__swiper {
-        transform: translateY(40px);
+        transform: translateY(35px);
     }
 
     .hero {
-        margin: 25px 0 10px;
+        margin: 10px 0 10px;
     }
     .hero-text {
         padding: 10px;
@@ -1779,6 +1780,8 @@ hr {
 
 
 @media (max-width: 750px) {
+    
+
     .header_top {
         padding: 7.5px 0;
     }
@@ -1962,6 +1965,9 @@ hr {
 @media (max-width: 650px) {
     .hero-pagination {
         display: none;
+    }
+    .hero__swiper {
+        transform: translateY(20px);
     }
 
 
@@ -2216,6 +2222,9 @@ hr {
 
 }
 @media (max-width: 359px) {
+    .hero__swiper {
+        transform: translateY(0px);
+    }
     .contact-map2 {
         display: none;
     }
