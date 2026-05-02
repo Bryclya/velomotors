@@ -129,7 +129,9 @@ hr {
 
 .nav {}
 
-
+.nav_list-link:nth-child(2), .nav_list-link:nth-child(5) {
+    display: none;
+}
 
 .burger-icon {
     display: none;
@@ -456,6 +458,7 @@ hr {
 
 .products {
     margin: 30px 0;
+    display: none;
 }
 
 .products-title {
@@ -656,7 +659,10 @@ hr {
     cursor: pointer;
     transition: all 0.6s;
 }
-
+.black-line {
+    width: 100%;
+    border: 1px solid black;
+}
 .servise-item-list:hover {
     color: var(--accent-color);
 }
@@ -671,6 +677,9 @@ hr {
 }
 
 .servise-desc {
+    display: none;
+    visibility: hidden;
+
     position: absolute;
     bottom: 0;
     right: 0;
@@ -685,6 +694,9 @@ hr {
 }
 
 .servise-desc-middle {
+    display: none;
+    visibility: hidden;
+
     position: absolute;
     bottom: 0;
     right: 0;
@@ -699,6 +711,9 @@ hr {
 }
 
 .servise-desc-right {
+    display: none;
+    visibility: hidden;
+
     position: absolute;
     bottom: 0;
     left: 0;
@@ -874,6 +889,7 @@ hr {
 .testimonials {
     padding: 30px 0;
     background: var(--color-bg);
+    display: none;
 }
 
 .testimonials-title {
@@ -1167,6 +1183,8 @@ hr {
 }
 
 .contact-connection-mail {
+    display: none;
+    visibility: hidden;
     font-family: var(--font-text);
     font-weight: 600;
     font-size: 24px;
